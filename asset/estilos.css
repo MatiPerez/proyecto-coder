@@ -1,0 +1,484 @@
+/* Encabezado del Sitio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+
+/* inicio barra de  menu */
+ul {
+    background-color: rgb(6, 6, 39);
+    list-style: none;
+    padding: 0;
+}
+
+.navegacion {
+    display: flex;
+}
+
+
+
+.navegacion>li {
+    flex-grow: 1;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald',
+        sans-serif;
+    color: white;
+}
+
+ul ul {
+    position: absolute;
+    background-color: rgb(6, 6, 39);
+    width: 100%;
+    display: none;
+}
+
+
+
+ul li:hover ul {
+    display: block;
+}
+
+.navegacion a:hover {
+    color: red
+}
+
+
+/* fin de la barra de menu */
+
+h1 {
+    line-height: 1.3em;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.3em 0;
+    color: black;
+}
+
+h2 {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+p {
+    text-align: left;
+    color: black;
+}
+
+/* Fin del Encabezado del Sitio */
+
+/* Footer del Sitio */
+
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    grid-area: footer;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to top, blue, rgb(133, 4, 4));
+}
+
+
+footer p {
+    color: white;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+footer p:hover {
+    color: red;
+    -webkit-transform: translate(10%);
+    transform: translate(10%);
+}
+
+.redes a {
+    color: white;
+}
+
+.redes a:hover {
+    color: red;
+}
+
+/* Fin de Footer del Sitio */
+
+
+/*--------------------------------------------------------------- Comienzo pagina de INICIO */
+
+.carrucel h1 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+/* comienzo de Caratulas con enlace a cada sector */
+
+.caratulas h2 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Esta es la Caratulas del index , se aplica Grid y dentro Flexbox*/
+
+.caratulas {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(1, 200px);
+    height: 500px;
+    gap: 20px;
+    grid-template-areas:
+        "im1 im2 im3 im4";
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.caratulas {
+
+    grid-area: galeria;
+
+}
+
+.im1 {
+
+    grid-area: im1;
+
+}
+
+.im2 {
+
+    grid-area: im2;
+
+}
+
+.im3 {
+
+    grid-area: im3;
+
+}
+
+.im4 {
+
+    grid-area: im4;
+
+}
+
+.caratulas img {
+    width: 200px;
+    height: 260px;
+}
+
+.gris {
+    transition: all 2s;
+    filter: grayscale(100%);
+}
+
+.gris:hover {
+    filter: grayscale(0%);
+}
+
+
+
+/* Fin de Caratulas con enlace a cada sector */
+
+/*  Inicio Banner publicitario */
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+/*  Fin Banner publicitario */
+
+/* Inicio de Formulario para inscribirse a Newsletter del club  */
+
+.newsletter {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter h3 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.newsletter h3:hover {
+    color: red;
+}
+
+.newsletter p {
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 3%;
+}
+
+.newsletter p:hover {
+    color: white;
+}
+
+/* Fin de Formulario para inscribirse a Newsletter del club  */
+
+/* -----------------------------------------------------------------------Fin de pagina de INICIO */
+
+/* -----------------------------------------------------------------------Comienzo de pagina LES JUGADORES */
+
+.jugadores h1 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.jugadores p {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor__tarjeta {
+    margin: 70px 0;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.tarjeta__img {
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta__miniatura {
+    width: 650px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.tarjeta__titulo {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 2.20em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    color: rgb(128, 21, 21);
+}
+
+.tarjeta__datos {
+    line-height: 28px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------Fin de pagina LES JUGADORES */
+
+/* ----------------------------------------------------------------------Comienzo de Disiplinas */
+
+.plantel {
+    padding: 5px 10px 12px 15px;
+    margin: 5px 10px 12px 15px;
+}
+
+
+.galeria {
+    padding: 5px 10px 12px 15px;
+    margin: 5px 10px 12px 15px;
+}
+
+
+/* -----------------------------------------------------------------------Comienzo de pagina FÚTBOL FEMENINO */
+.futbolFemenino h1 {
+    color: rgb(255, 8, 202);
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.futbolFemenino p {
+    color: black;
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------Fin de pagina FÚTBOL FEMENINO */
+
+/* -----------------------------------------------------------------------Comienzo de pagina FÚTBOL MASCULINO */
+
+.futbolMasculino h1 {
+    color: blue;
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.futbolMasculino p {
+    color: black;
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------Fin de pagina FÚTBOL MASCULINO */
+
+/* -----------------------------------------------------------------------Comienzo de pagina BASQUET FEMENINO */
+.basquetFemenino h1 {
+    color: rgb(255, 8, 202);
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.basquetFemenino p {
+    color: black;
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------Fin de pagina BASQUET FEMENINO */
+
+/* -----------------------------------------------------------------------Comienzo de pagina BASQUET MASCULINO */
+
+.basquetMasculino h1 {
+    color: blue;
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.basquetMasculino p {
+    color: black;
+    font-family: 'Oswald',
+        sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* -----------------------------------------------------------------------Fin de pagina BASQUET MASCULINO */
+
+/* ----------------------------------------------------------------------Fin de Disiplinas */
+
+
+/*-------------------------------------------------------------------------- Comienzo de pagina EL CLUB */
+/* Inicio de Tabla de Horarios */
+.elClub h1 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.tabladeHorarios {
+    background-color: black;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tabladeHorarios th {
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(5, 5, 85);
+}
+
+.tabladeHorarios th:hover {
+    color: red;
+}
+
+.tabladeHorarios td {
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tabladeHorarios td:hover {
+    color: red;
+}
+
+/* Fin de Tabla de Hoarios */
+
+/* Inicio de Formulario */
+
+.info {
+    pa
+}
+
+.formulario {
+    padding: 2%;
+    background-image: url(../imagenes/Club/fondo-institucional.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Fin del formulario */
+/*---------------------------------------------------------------------------- Fin de pagina EL CLUB */

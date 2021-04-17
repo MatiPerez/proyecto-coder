@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="asset/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/8e59f484ab.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <title>Club de Barrio</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="menu">
+        <nav>
+            <ul class="navegacion">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Disiplinas</a>
+                    <ul>
+                        <li><a href="./views/futbol-femenino.html">Fútbol Femenino</a></li>
+                        <li><a href="./views/futbol-masculino.html">Fútbol Maculino</a></li>
+                        <li><a href="./views/basquet-femenino.html">Basquet Femenino</a></li>
+                        <li><a href="./views/basquet-masculino.html">Basquet Masculino</a></li>
+                    </ul>
+                </li>
+                <li><a href="./views/les-jugadores.html">Jugadores</a></li>
+                <li><a href="./views/el-club.html">El Club</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de Encabezado -->
+
+    <!-- Inicio del titulo y carrusel institucional Sitio -->
+    <div class="carrucel">
+        <!-- Titulo del sitio mas Carrucel de Fotos-->
+        <h1>Club de Barrio</h1>
+        <img src="./imagenes/Club/club-1.jpg" alt="foto-institucional">
+        <img src="./imagenes/Club/club-2.jpg" alt="foto-institucional">
+    </div><!-- Fin del titulo y carrusel institucional Sitio -->
+
+    <!-- Inicio Banner publicitario -->
+    <div class="banner">
+        <img src="./imagenes/Club/banner.jpg" alt="banner-de-publicidad"><!-- Imagen con publicidad -->
+    </div>
+    <!-- Fin Banner publicitario -->
+
+    <!-- Inicio Seccion de Actividades con enlaces a cada pagina del sitio -->
+    <div class="caratulas">
+        <div class="im1">
+            <h2>Fútbol Femenino</h2>
+            <a title="futbol-femenino" href="./views/futbol-femenino.html"><img
+                    src="./imagenes/futbol-femenino/Ainoa Clemente.jpg" alt="futbol-femenino" class="gris" /></a>
+        </div>
+        <div class="im2">
+            <h2>Fútbol Masculino</h2>
+            <a title="futbol-masculino" href="./views/futbol-masculino.html"><img
+                    src="./imagenes/futbol-masculino/Bruno Piton.jpg" alt="futbol-masculino" class="gris" /></a>
+        </div>
+        <div class="im3">
+            <h2>Basquet Femenino</h2>
+            <a title="basquet-femenino" href="./views/basquet-femenino.html"><img
+                    src="./imagenes/basquet-femenino/Liz Domenech.jpg" alt="basquet-femenino" class="gris" /></a>
+        </div>
+        <div class="im4">
+            <h2>Basquet Masculino</h2>
+            <a title="basquet-masculino" href="./views/basquet-masculino.html"><img
+                    src="./imagenes/basquet-masculino/Pepe Sanchez.jpg" alt="basquet-masculino" class="gris" /></a>
+        </div>
+    </div>
+    <!-- Fin Seccion de Actividades con enlaces a cada pagina del sitio -->
+
+
+    <!-- Inicio de Formulario para inscribirse a Newsletter del club -->
+    <div class="newsletter">
+        <h3>Recibir Newsletter</h3>
+        <p>Ingresa tu e-mail para recibir toda la información del club de tus amores!</p>
+        <form action="ejemplo.php" method="get">
+            <label for="email">Ingrese su email:</label>
+            <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <!-- Fin de Formulario para inscribirse a Newsletter del club -->
+
+    <!-- Comienzo del Footer -->
+    <footer class="pie">
+        <p>Copyright © 2021 Club de Barrio</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <!-- Fin del Footer -->
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../asset/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/8e59f484ab.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <title>El Club</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="menu">
+        <nav>
+            <ul class="navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Disiplinas</a>
+                    <ul>
+                        <li><a href="./futbol-femenino.html">Fútbol Femenino</a></li>
+                        <li><a href="./futbol-masculino.html">Fútbol Maculino</a></li>
+                        <li><a href="./basquet-femenino.html">Basquet Femenino</a></li>
+                        <li><a href="./basquet-masculino.html">Basquet Masculino</a></li>
+                    </ul>
+                </li>
+                <li><a href="./les-jugadores.html">Jugadores</a></li>
+                <li><a href="./el-club.html">El Club</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin de Encabezado -->
+
+    <!-- Inicio de la sección-->
+    <div class="elClub">
+        <h1>El Club</h1>
+        <p>Club de Barrio fue fundado en el año 1908 con mano de obra de su propia gente, lleva el nombre de lo que los
+            enorgullece, <strong><i>CLUB DE BARRIO</i></strong> y en su historial cuenta con un gran palmar de logros
+            obtenidos en el tiempo que lleva de vida.
+            Bienvenidos al Club de Barrio mas lindo del Mundo!</p>
+    </div>
+    <!-- Fin de la sección-->
+
+    <!-- Imagen Banner de Publicidad, invitando a hacer nuevos socios -->
+    <div class="banner">
+        <img src="../imagenes/Club/banner.jpg" alt="banner-de-publicidad"><!-- Imagen con publicidad -->
+    </div>
+
+    <!-- Inicio Seccion horarios de Actividades -->
+    <div>
+        <!-- Seccion de Tabla informativa con los horarios de las Actividades -->
+        <h2>Horarios de Disiplinas</h2>
+        <table class="tabladeHorarios" border="3" cellpadding="8" cellspacing="10">
+            <tr>
+                <th>Deporte</th>
+                <th>Día de Entrenamiento</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td>Fútbol Femenino</td>
+                <td>Lunes y Miércoles</td>
+                <td>20 Hs.</td>
+            </tr>
+            <tr>
+                <td>Fútbol Masculino</td>
+                <td>Martes y Jueves</td>
+                <td>20 Hs.</td>
+            </tr>
+            <tr>
+                <td>Basquet Femenino</td>
+                <td>Lunes y Viernes</td>
+                <td>22 Hs.</td>
+            </tr>
+            <tr>
+                <td>Basquet Masculino</td>
+                <td>Martes y Viernes</td>
+                <td>22 Hs.</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <!-- Fin Seccion horarios de Actividades -->
+
+    <!-- Inicio Formulario para contacto con club -->
+    <div class="info">
+        <h2>Contáctenos</h2>
+        <br>
+        <form class="formulario" action="ejemplo.php" method="get">
+            <label for="nombre">Ingrese su Nombre:</label>
+            <input type="text" placeholder="Ingrese su Nombre" maxlength="30" name="nombre" id="nombre">
+            <br><br>
+            <label for="apellido">Ingrese su Apellido:</label>
+            <input type="text" placeholder="Ingrese su Apellido" maxlength="30" name="apellido" id="apellido">
+            <br><br>
+            <label for="email">Ingrese su email:</label>
+            <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email">
+            <br><br>
+            <label for="">Deporte:</label>
+            <select name="Deporte" id="">
+                <option value="futbol-femenino">Fútbol Femenino</option>
+                <option value="futbol-masculino">Fútbol Masculino</option>
+                <option value="basquet-femenino">Basquet Femenino</option>
+                <option value="basquet-masculino">Basquet Masculino</option>
+            </select>
+            <br><br>
+            <fieldset>
+                <legend>seleccione según su interés</legend>
+                <input type="radio" name="option" value="Iniciar en el Deporte"> Iniciar en el Deporte
+                <input type="radio" name="option" value="Días de partido"> Días de partido
+                <input type="radio" name="option" value="Otros"> Otros
+            </fieldset>
+            <br><br>
+            <label for="texto">Comentarios</label>
+            <br>
+            <textarea name="texto" id="" cols="30" rows="10"></textarea>
+            <br><br>
+            <label for="checkbox">Acepta recibir el Newsletter</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <br><br>
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Limpiar el Formulario">
+        </form>
+    </div>
+    <!-- Fin del Formulario para contacto con club -->
+
+    <!-- Comienzo del Footer -->
+    <footer class="pie">
+        <p>Copyright © 2021 Club de Barrio</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+    <!-- Fin del Footer -->
+</body>
+
+</html>
